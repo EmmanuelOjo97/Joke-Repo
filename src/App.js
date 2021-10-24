@@ -17,6 +17,7 @@ function App() {
   // );
 
   const whydawg = "Pun";
+  console.log("Hello");
   const fetchJoke = async () => {
     try {
       setLoading(false);
