@@ -1,0 +1,52 @@
+body {
+  background-color: #7395ae;
+}
+
+.flexbox-container {
+  display: flex;
+  /* background-color: #45a29e; */
+  justify-content: space-around;
+  width: 50%;
+  margin: auto;
+}
+
+.flex-item {
+  width: 200px;
+  margin: 10px;
+  border: 3px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.fetch-btn {
+  margin: 10px auto;
+  display: block;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+  border-color: #04aa6d;
+  color: green;
+}
+
+.fetch-btn:hover {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.joke {
+  margin: auto;
+  width: 25%;
+  /* align-content: center; */
+  text-align: center;
+}
+
+.joke-content {
+  font-size: 50px;
+}

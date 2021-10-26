@@ -1,6 +1,7 @@
 import react from "react";
 import { useState, useEffect } from "react";
 import { checkboxes } from "./checkboxes";
+import "./App.css";
 // import Checkbox from "./Checkbox";
 
 function App() {
@@ -67,45 +68,63 @@ function App() {
 
   return (
     <div>
-      <h1>Tell me a Joke</h1>
-      <input
-        type="checkbox"
-        value="Any"
-        id="anyJoke"
-        onChange={(e) => handleAnyCategory(e)}
-      />
-      <label htmlFor="anyJoke">Any</label>
-      {checkboxes.map((checker, index) => {
-        return (
-          <div key={index}>
-            <input
-              type="checkbox"
-              value={checker.category}
-              name="pooper"
-              onChange={(e) => handleCheckBox(e)}
-            />
-            <label htmlFor="">{checker.category}</label>
-          </div>
-        );
-      })}
+      <h1 className="title">Tell me a Joke</h1>
+      <div className="flexbox-container">
+        <div className="flex-item">
+          <input
+            type="checkbox"
+            value="Any"
+            id="anyJoke"
+            onChange={(e) => handleAnyCategory(e)}
+          />
+          <label htmlFor="anyJoke">Any</label>
+        </div>
+
+        {checkboxes.map((checker, index) => {
+          return (
+            <div key={index} className="flex-item">
+              <input
+                type="checkbox"
+                value={checker.category}
+                name="pooper"
+                onChange={(e) => handleCheckBox(e)}
+              />
+              <label htmlFor="">{checker.category}</label>
+            </div>
+          );
+        })}
+      </div>
+
       <button
         onClick={() => {
           fetchJoke();
         }}
+        className="fetch-btn"
       >
         Tell me a joke
       </button>
-      <p>{setup}</p>
-      {/* <p>{punchline}</p> */}
-      {!loading ? (
-        <button onClick={() => showJoke()}>
-          {!showPunchline ? "Show me the joke" : "hide joke"}
-        </button>
-      ) : null}
+      <section className="joke">
+        <p className="joke-content">{setup}</p>
+        {/* <p>{punchline}</p> */}
+        {!loading ? (
+          <button onClick={() => showJoke()}>
+            {!showPunchline ? "Show me the joke" : "hide joke"}
+          </button>
+        ) : null}
 
-      {showPunchline ? <p>{punchline}</p> : null}
+        {showPunchline ? <p className="joke-content">{punchline}</p> : null}
+      </section>
     </div>
   );
+
+  // return (
+  //   <div className="flexbox-container">
+  //     <h1>WHy are you like this</h1>
+  //     <div className="flex-item"></div>
+  //     <div className="flex-item"></div>
+  //     <div className="flex-item"></div>
+  //   </div>
+  // );
 }
 
 export default App;
