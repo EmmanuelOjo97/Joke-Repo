@@ -1,4 +1,5 @@
 export const checkboxes = [
+  { category: "Any" },
   { category: "Programming" },
   { category: "Misc" },
   { category: "Pun" },
