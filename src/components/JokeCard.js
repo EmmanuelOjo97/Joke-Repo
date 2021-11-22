@@ -7,6 +7,7 @@ import { Grid } from "@mui/material";
 
 const MyJokeCard = styled(Card)({
   background: "#FFEE58",
+  width: "65%",
 });
 
 function JokeCard({ setup, loading, punchline, showJoke, showPunchline }) {
@@ -28,7 +29,7 @@ function JokeCard({ setup, loading, punchline, showJoke, showPunchline }) {
         </Button>
       ) : null}
 
-      <Grid container marginTop="50px" justifyContent="center">
+      <Grid container marginTop="50px" justifyContent="center" xs={12}>
         {showPunchline ? <Typography>{punchline}</Typography> : null}
       </Grid>
     </MyJokeCard>
