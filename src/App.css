@@ -1,22 +1,9 @@
 body {
-  background-color: #7395ae;
+  background-color: #212121;
+  background-image: url(./images/emojibackground.jpg);
+  background-size: cover;
 }
-
-.flexbox-container {
-  display: grid;
-  /* background-color: #45a29e; */
-  justify-content: space-around;
-  width: 50%;
-  height: 100px;
-  margin: auto;
-  grid-template-columns: repeat(3, 200px);
-}
-
-.flex-item {
-  /* width: 50px; */
-  margin: 10px;
-  border: 3px;
-}
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Noto+Sans+JP:wght@900&family=Quicksand:wght@700&display=swap");
 
 .title {
   text-align: center;
@@ -39,7 +26,7 @@ body {
 
 .fetch-btn:hover {
   background-color: #04aa6d;
-  color: white;
+  color: black;
 }
 
 .joke {
@@ -53,40 +40,9 @@ body {
   font-size: 20px;
 }
 
-.box {
-  width: 50%;
-  height: 100px;
-  border: black solid 5px;
-  /* margin: 20px auto; */
-  margin: 0% 0;
-  /* display: flex; */
-  justify-content: space-evenly;
-}
-
-.positioning-1 {
-  background-color: red;
-  width: 75%;
-  height: 50%;
-}
-.positioning-2 {
-  background-color: blue;
-  width: 100px;
-  height: 50%;
-}
-
-.positioning-3 {
-  background-color: red;
-  width: 75vw;
-  height: 50%;
-}
-.positioning-4 {
-  background-color: blue;
-  width: 25vw;
-  height: 50%;
-}
-.lorem {
-  width: 5%;
-}
-h1 {
-  margin: 0;
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10%;
 }
