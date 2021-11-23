@@ -22,7 +22,7 @@ function JokeCard({ setup, loading, punchline, showJoke, showPunchline }) {
           color="secondary"
         >
           {!showPunchline ? (
-            <Typography> Show me the joke</Typography>
+            <Typography>Show me the joke</Typography>
           ) : (
             <Typography>Hide joke</Typography>
           )}
