@@ -19,4 +19,4 @@ This App can be run locallaly by cloning the repository with the following comma
  [React](https://reactjs.org/) - front end framework
 
 # API
-https://covid19.mathdro.id/api
+https://sv443.net/jokeapi/v2/
