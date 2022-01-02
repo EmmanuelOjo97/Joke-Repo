@@ -6,7 +6,7 @@ This App is deployed here [Click me](https://inspiring-sinoussi-4cd7b1.netlify.a
 # Getting started
 This App can be run locallaly by cloning the repository with the following commands in your terminal.
 
- git clone https://github.com/EmmanuelOjo97/Covid-App.git
+ git clone https://github.com/EmmanuelOjo97/Joke-Repo.git
  
  npm install
  
