@@ -1,7 +1,9 @@
 body {
-  background-color: #212121;
   background-image: url(./images/emojibackground.jpg);
+  background-size: 2600px;
+  background-repeat: no-repeat;
 }
+
 @import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Noto+Sans+JP:wght@900&family=Quicksand:wght@700&display=swap");
 
 .title {
